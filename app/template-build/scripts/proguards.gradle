@@ -1,0 +1,11 @@
+def getAllProguardFiles() {
+    return [
+            android.getDefaultProguardFile('proguard-android-optimize.txt'),
+            'template-build/proguards/proguard-rules.pro',
+            'template-build/proguards/proguard-log.pro'
+    ] as Object[]
+}
+
+ext {
+    getAllProguardFiles = this.&getAllProguardFiles
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../../layout/custom_preview.xml" value="0.21851851851851853" />
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.29259259259259257" />
+        <entry key="../../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_dropdown_item_1line.xml" value="0.18958333333333333" />
+        <entry key="../../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20462962962962963" />
+        <entry key="app/src/main/res/drawable/bg_pay_selector.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/drawable/bg_rec_selector.xml" value="0.21979166666666666" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.26927083333333335" />
+        <entry key="app/src/main/res/drawable/shape_load_bg.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable/splash.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/activity_clent_main.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/activity_client_main.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_npc_main.xml" value="0.19010416666666666" />
+        <entry key="app/src/main/res/layout/fra_client_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/frag_client_pay.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/frag_npc_id.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/frag_npc_info.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/frag_npc_select.xml" value="0.13538775794440128" />
+        <entry key="app/src/main/res/layout/frag_select_member.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/fragment_one.xml" value="0.12318840579710146" />
+        <entry key="app/src/main/res/layout/fragment_three.xml" value="0.12318840579710146" />
+        <entry key="app/src/main/res/layout/fragment_two.xml" value="0.12318840579710146" />
+        <entry key="app/src/main/res/layout/item_member.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_pay_add.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_pay_menber.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_spinner_name.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/layout_loading_view.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/layout/layout_pay.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/layout_select_member.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/lib_dialog_default_empty.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/layout/lib_dialog_default_error.xml" value="0.2513586956521739" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

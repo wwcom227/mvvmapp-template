@@ -1,0 +1,118 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+}
+apply from: 'template-build/scripts/proguards.gradle'
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId App.appId
+        minSdkVersion App.minSdkVersion
+        targetSdkVersion App.targetSdkVersion
+        versionCode App.versionCode
+        versionName App.versionName
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        buildConfigField "boolean", "IS_SHOW_LOG", "false"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        vectorDrawables.useSupportLibrary = true
+//        ndk {
+//            abiFilters "armeabi-v7a"
+//        }
+    }
+
+    buildTypes {
+        // debug
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            debuggable true
+            matchingFallbacks = ['debug']
+        }
+        // release
+        release {
+            minifyEnabled true
+            debuggable false
+            // Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource
+            shrinkResources true
+            signingConfig signingConfigs.debug
+            proguardFiles getAllProguardFiles()
+            matchingFallbacks = ['release']
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("template-build/template.keystore")
+            storePassword "template123"
+            keyAlias "template"
+            keyPassword "template123"
+            v2SigningEnabled true
+        }
+    }
+
+//    afterEvaluate {
+//        android.applicationVariants.all { variant ->
+//            if (variant.name.equals("release")) {
+//                def buildDate = new SimpleDateFormat("yyyyMMdd-HHmm").format(new Date())
+//                def apkName = "template_${variant.versionName}_${variant.name}_${buildDate}.apk"
+//                variant.outputs[0].outputFileName = apkName
+//            }
+//        }
+//    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    //AndroidX相关
+    implementation Deps.kotlinStdlib
+    implementation Deps.androidx_material
+    implementation Deps.androidx_appcompat
+    implementation Deps.androidx_recyclerView
+    implementation Deps.androidx_constraintLayout
+    implementation Deps.androidx_legacy
+    implementation Deps.androidx_multidex
+
+    //Jetpack相关
+    implementation Deps.jetpack_lifecycle_process //lifecycle_process
+    implementation Deps.jetpack_lifecycle_service //lifecycle_service
+    implementation Deps.jetpack_livedata //livedata
+    implementation Deps.jetpack_activity_ktx //activity_ktx
+    implementation Deps.jetpack_fragment_ktx //fragment_ktx
+    implementation Deps.jetpack_viewmodel //viewmodel
+    implementation Deps.jetpack_lifecycle_runtime //lifecycleScope
+    implementation Deps.jetpack_datastore //datastore
+    implementation Deps.jetpack_datastore_pf //datastore_preferences
+
+    //协程
+    implementation Deps.coroutines_core
+    implementation Deps.coroutines_android
+
+    //okhttp
+    implementation Deps.okhttp
+    implementation Deps.okhttp_log_interceptor
+    //retrofit
+    implementation Deps.retrofit
+    implementation Deps.retrofit_converter_gson
+
+    // third part
+    implementation Deps.spinner
+    implementation Deps.fresco
+    implementation Deps.base_adapter
+    implementation Deps.event_bus
+    implementation Deps.swipe
+    implementation Deps.animation
+}

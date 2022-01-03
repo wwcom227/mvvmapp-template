@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mvvm App Template</string>
+    <string name="dialog_empty_data">空数据</string>
+    <string name="dialog_error">发生错误，点击屏幕重试</string>
+    <string name="dialog_error_reload">点击屏幕重试</string>
+
+
+</resources>
