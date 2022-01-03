@@ -1,0 +1,1 @@
+# mvvmapp-template
