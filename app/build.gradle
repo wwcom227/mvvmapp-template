@@ -1,3 +1,5 @@
+import java.text.SimpleDateFormat
+
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
@@ -19,9 +21,7 @@ android {
         buildConfigField "boolean", "IS_SHOW_LOG", "false"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         vectorDrawables.useSupportLibrary = true
-//        ndk {
-//            abiFilters "armeabi-v7a"
-//        }
+        resConfigs "en", "zh-rCN"
     }
 
     buildTypes {
@@ -56,15 +56,21 @@ android {
         }
     }
 
-//    afterEvaluate {
-//        android.applicationVariants.all { variant ->
-//            if (variant.name.equals("release")) {
-//                def buildDate = new SimpleDateFormat("yyyyMMdd-HHmm").format(new Date())
-//                def apkName = "template_${variant.versionName}_${variant.name}_${buildDate}.apk"
-//                variant.outputs[0].outputFileName = apkName
-//            }
-//        }
-//    }
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def buildDate = new SimpleDateFormat("yyyyMMddHHmm").format(new Date())
+                def fileName = "${App.appName}_${buildDate}.apk"
+                if (variant.buildType.name == 'release') {
+                    fileName = "${App.appName}_${defaultConfig.versionName}_${buildDate}.apk"
+                } else if (variant.buildType.name == 'debug') {
+                    fileName = "${App.appName}_${defaultConfig.versionName}_debug_${buildDate}.apk"
+                }
+                outputFileName = fileName
+            }
+        }
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -86,28 +92,6 @@ dependencies {
     implementation Deps.androidx_legacy
     implementation Deps.androidx_multidex
 
-    //Jetpack相关
-    implementation Deps.jetpack_lifecycle_process //lifecycle_process
-    implementation Deps.jetpack_lifecycle_service //lifecycle_service
-    implementation Deps.jetpack_livedata //livedata
-    implementation Deps.jetpack_activity_ktx //activity_ktx
-    implementation Deps.jetpack_fragment_ktx //fragment_ktx
-    implementation Deps.jetpack_viewmodel //viewmodel
-    implementation Deps.jetpack_lifecycle_runtime //lifecycleScope
-    implementation Deps.jetpack_datastore //datastore
-    implementation Deps.jetpack_datastore_pf //datastore_preferences
-
-    //协程
-    implementation Deps.coroutines_core
-    implementation Deps.coroutines_android
-
-    //okhttp
-    implementation Deps.okhttp
-    implementation Deps.okhttp_log_interceptor
-    //retrofit
-    implementation Deps.retrofit
-    implementation Deps.retrofit_converter_gson
-
     // third part
     implementation Deps.spinner
     implementation Deps.fresco
@@ -115,4 +99,7 @@ dependencies {
     implementation Deps.event_bus
     implementation Deps.swipe
     implementation Deps.animation
+    implementation Deps.fancybuttons
+
+    implementation project(path: ':base')
 }

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#FF2196F3</color>
+    <color name="colorPrimaryDark">#FF448AFF</color>
+    <color name="colorPrimaryLight">#FF82B1FF</color>
+    <color name="colorAccent">#FF4081</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="button_common_color">#3983f2</color>
+    <color name="button_common_pressed_color">#30000000</color>
+    <color name="button_common_border_color">#1f83f8</color>
+    <color name="button_common_disabled_color">#e0e0e0</color>
 </resources>

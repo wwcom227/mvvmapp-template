@@ -1,0 +1,29 @@
+<resources>
+    <!--通用字体-->
+    <dimen name="font_smallest">9sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_smaller">14sp</dimen>
+    <dimen name="font_normal">15sp</dimen>
+    <dimen name="font_big">19sp</dimen>
+    <dimen name="font_bigger">30sp</dimen>
+    <dimen name="font_biggest">48sp</dimen>
+    <dimen name="font_big_title">20sp</dimen>
+    <dimen name="font_title">18sp</dimen>
+    <dimen name="font_small_title">16sp</dimen>
+    <dimen name="font_small_m">13sp</dimen>
+
+    <!--特殊字体-->
+    <dimen name="font_special_1">24sp</dimen>
+
+    <dimen name="divider_size">0.5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="dialog_layout_padding_bottom">15dp</dimen>
+    <dimen name="dialog_layout_padding_top">15dp</dimen>
+    <dimen name="dialog_bottom_padding_top">40dp</dimen>
+    <dimen name="dialog_bottom_padding_left">10dp</dimen>
+    <dimen name="dialog_bottom_padding_right">10dp</dimen>
+    <dimen name="dialog_button_spacing_width">16dp</dimen>
+    <dimen name="dialog_input_item_spaccing_height">20dp</dimen>
+    <dimen name="dialog_text_item_spaccing_height">5dp</dimen>
+</resources>

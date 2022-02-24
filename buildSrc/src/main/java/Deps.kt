@@ -19,10 +19,11 @@ import LibsVersion.Companion.retrofit_version
 object App {
     const val targetSdkVersion = 30
     const val compileSdkVersion = 30
-    const val minSdkVersion = 21
+    const val minSdkVersion = 24
     const val appId = "com.template.mvvmapp"
     const val versionCode = 20210916
     const val versionName = "1.0.0"
+    const val appName = "mvvmAppTemplate"
 }
 
 object Deps {
@@ -32,7 +33,8 @@ object Deps {
 
     //引入协程
     const val coroutines_core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
-    const val coroutines_android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+    const val coroutines_android =
+        "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
 
     //ktx扩展列表：https://developer.android.com/kotlin/ktx/extensions-list
     //Jetpack相关
@@ -43,7 +45,8 @@ object Deps {
 
     //将 Kotlin 协程与生命周期感知型组件一起使用: https://developer.android.com/topic/libraries/architecture/coroutines
     //LifecycleScope协程
-    const val jetpack_lifecycle_runtime = "androidx.lifecycle:lifecycle-runtime-ktx:$jetpack_version"
+    const val jetpack_lifecycle_runtime =
+        "androidx.lifecycle:lifecycle-runtime-ktx:$jetpack_version"
 
     //ProcessLifecycleOwner给整个 app进程 提供一个lifecycle
     const val jetpack_lifecycle_process = "androidx.lifecycle:lifecycle-process:$jetpack_version"
@@ -57,7 +60,8 @@ object Deps {
     const val androidx_material = "com.google.android.material:material:$material_version"
     const val androidx_appcompat = "androidx.appcompat:appcompat:$appcompat_version"
     const val androidx_recyclerView = "androidx.recyclerview:recyclerview:$recyclerview_version"
-    const val androidx_constraintLayout = "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+    const val androidx_constraintLayout =
+        "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
     const val androidx_legacy = "androidx.legacy:legacy-support-v4:$legacy_version"
     const val androidx_multidex = "androidx.multidex:multidex:$multidex_version"
     const val androidx_viewpager2 = "androidx.viewpager2:viewpager2:1.1.0-beta01"
@@ -81,6 +85,7 @@ object Deps {
     const val event_bus = "com.jeremyliao:live-event-bus-x:1.7.2"
     const val swipe = "com.github.aitsuki:SwipeMenuRecyclerView:2.1.0"
     const val animation = "com.daimajia.androidanimations:library:2.4@aar"
+    const val fancybuttons="com.github.medyo:fancybuttons:1.9.1"
 }
 
 internal class LibsVersion {

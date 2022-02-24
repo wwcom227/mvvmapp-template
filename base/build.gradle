@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    //AndroidX相关
+    implementation Deps.kotlinStdlib
+    implementation Deps.androidx_material
+    implementation Deps.androidx_appcompat
+    implementation Deps.androidx_recyclerView
+    implementation Deps.androidx_constraintLayout
+    implementation Deps.androidx_legacy
+    implementation Deps.androidx_multidex
+
+    //Jetpack相关
+    api Deps.jetpack_lifecycle_process //lifecycle_process
+    api Deps.jetpack_lifecycle_service //lifecycle_service
+    api Deps.jetpack_livedata //livedata
+    api Deps.jetpack_activity_ktx //activity_ktx
+    api Deps.jetpack_fragment_ktx //fragment_ktx
+    api Deps.jetpack_viewmodel //viewmodel
+    api Deps.jetpack_lifecycle_runtime //lifecycleScope
+    api Deps.jetpack_datastore //datastore
+    api Deps.jetpack_datastore_pf //datastore_preferences
+
+    //协程
+    api Deps.coroutines_core
+    api Deps.coroutines_android
+
+    //okhttp
+    api Deps.okhttp
+    api Deps.okhttp_log_interceptor
+    //retrofit
+    api Deps.retrofit
+    api Deps.retrofit_converter_gson
+}

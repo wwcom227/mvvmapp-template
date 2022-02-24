@@ -8,25 +8,24 @@
         <item name="android:windowBackground">@android:color/darker_gray</item>
     </style>
 
+    <style name="NoTitle" parent="@style/Theme.Template">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
     <style name="SplashActivityTheme" parent="@style/NoTitle">
         <!--不让windowBackground延申到navigation bar区域-->
         <item name="android:windowDrawsSystemBarBackgrounds">false</item>
         <!--适配Android P刘海屏-->
-        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
         <item name="android:windowBackground">@drawable/splash</item>
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <style name="NoTitle" parent="android:Theme.NoTitleBar">
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowBackground">@color/white</item>
-        <item name="android:windowAnimationStyle">@style/EbpayActivityAnim</item>
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="elevation">@dimen/design_appbar_elevation</item>
     </style>
 
-    <style name="EbpayActivityAnim">
-        <item name="android:activityOpenEnterAnimation">@anim/wallet_base_slide_from_right</item>
-        <item name="android:activityOpenExitAnimation">@anim/wallet_base_slide_to_left</item>
-        <item name="android:activityCloseEnterAnimation">@anim/wallet_base_slide_from_left</item>
-        <item name="android:activityCloseExitAnimation">@anim/wallet_base_slide_to_right</item>
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@android:color/white</item>
     </style>
 </resources>

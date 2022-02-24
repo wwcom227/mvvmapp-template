@@ -8,15 +8,31 @@
         <entry key="../../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_dropdown_item_1line.xml" value="0.18958333333333333" />
         <entry key="../../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.2513586956521739" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20462962962962963" />
+        <entry key="app/src/main/res/drawable-xhdpi/bg_dialog.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_dialog.xml" value="0.11666666666666667" />
+        <entry key="app/src/main/res/drawable/bg_dialog_pop.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bg_pay_selector.xml" value="0.24895833333333334" />
+        <entry key="app/src/main/res/drawable/bg_progress.xml" value="0.24375" />
         <entry key="app/src/main/res/drawable/bg_rec_selector.xml" value="0.21979166666666666" />
+        <entry key="app/src/main/res/drawable/bg_wheel_selector.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.26927083333333335" />
+        <entry key="app/src/main/res/drawable/selector_bg_button_common.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selector_bg_button_common_unable.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selector_bg_button_negative_common.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/shape_load_bg.xml" value="0.262037037037037" />
         <entry key="app/src/main/res/drawable/splash.xml" value="0.2328125" />
+        <entry key="app/src/main/res/layout/activity_browser.xml" value="0.2205746061167748" />
         <entry key="app/src/main/res/layout/activity_clent_main.xml" value="0.18958333333333333" />
         <entry key="app/src/main/res/layout/activity_client_main.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/layout/activity_guide.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/activity_launcher.xml" value="0.21603260869565216" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_navigation.xml" value="0.23867753623188406" />
         <entry key="app/src/main/res/layout/activity_npc_main.xml" value="0.19010416666666666" />
+        <entry key="app/src/main/res/layout/common_header.xml" value="0.16757246376811594" />
+        <entry key="app/src/main/res/layout/dialog_normal.xml" value="0.18885869565217392" />
+        <entry key="app/src/main/res/layout/dialog_pop.xml" value="0.17391304347826086" />
+        <entry key="app/src/main/res/layout/dialog_pop_picker.xml" value="0.17391304347826086" />
         <entry key="app/src/main/res/layout/fra_client_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/frag_client_pay.xml" value="0.25" />
         <entry key="app/src/main/res/layout/frag_npc_id.xml" value="0.25" />
@@ -30,11 +46,21 @@
         <entry key="app/src/main/res/layout/item_pay_add.xml" value="0.335" />
         <entry key="app/src/main/res/layout/item_pay_menber.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_spinner_name.xml" value="0.18958333333333333" />
+        <entry key="app/src/main/res/layout/layout_guide.xml" value="0.2441123188405797" />
+        <entry key="app/src/main/res/layout/layout_guide_entry.xml" value="0.13297872340425532" />
         <entry key="app/src/main/res/layout/layout_loading_view.xml" value="0.2513586956521739" />
         <entry key="app/src/main/res/layout/layout_pay.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_select_member.xml" value="0.25" />
         <entry key="app/src/main/res/layout/lib_dialog_default_empty.xml" value="0.2513586956521739" />
         <entry key="app/src/main/res/layout/lib_dialog_default_error.xml" value="0.2513586956521739" />
+        <entry key="app/src/main/res/layout/navigation_fragment.xml" value="0.23867753623188406" />
+        <entry key="app/src/main/res/layout/navigation_fragment_entry.xml" value="0.16530797101449277" />
+        <entry key="base/src/main/res/drawable/ic_launcher_background.xml" value="0.24444444444444444" />
+        <entry key="base/src/main/res/drawable/shape_load_bg.xml" value="0.22708333333333333" />
+        <entry key="base/src/main/res/layout/layout_loading_view.xml" value="0.18568840579710144" />
+        <entry key="base/src/main/res/layout/lib_dialog_default_error.xml" value="0.18568840579710144" />
+        <entry key="webkit/src/main/res/layout/activity_browser.xml" value="0.20481927710843373" />
+        <entry key="webkit/src/main/res/layout/bg_progress.xml" value="0.2441123188405797" />
       </map>
     </option>
   </component>
